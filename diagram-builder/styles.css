@@ -1,0 +1,60 @@
+
+body {
+    margin: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow-x: hidden;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#canvas {
+    width: 100vw;
+    height: 100vh;
+    background-color: white;
+    position: absolute;
+}
+
+#side-panel {
+    border-left: 2px solid black;
+    background-color: rgb(194, 194, 194);
+    width: 200px;
+    height: 100vh;
+    position: absolute;
+    left: calc(100vw - 200px);
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.function {
+    padding: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    border-radius: 100px;
+}
+
+.control {
+    padding: 20px;
+    padding-left: 25px;
+    padding-right: 25px;
+}
+
+.function, .control {
+    margin: 0;
+    border: 2px solid black;
+    width: fit-content;
+    background-color: white;
+}
+
+.function:hover, .control:hover {
+    cursor: grab;
+}
+
+#svg-canvas {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+}
