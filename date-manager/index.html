@@ -35,12 +35,15 @@
 <body>
     <h1 id="today-header"></h1>
     <form>
+        <label for="title-input">Title</label>
         <input id="title-input" type="text">
+        <label for="month-select">Month</label>
         <select id="month-select">
         </select>
+        <label for="day-select">Day</label>
         <input id="day-select" type="text" maxlength="2" pattern="[0-9]">
+        <button id="submit-event-button">Submit Event</button>
     </form>
-    <button id="submit-event-button">Submit Event</button>
     <ul id="event-list">
     </ul>
 </body>

@@ -1,9 +1,60 @@
 
+:root {
+    --blue: #5F9EA0;
+    --gray-300: #BBBBBB;
+    --gray-600: #444444;
+    --gray-800: #222222;
+}
+
 body {
     font-family: 'Courier New', Courier, monospace;
+    width: 100vw;
+    margin: 0;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+
+button {
+    color: white;
+    background-color: var(--gray-600);
+    border: none;
+    width: fit-content;
+    align-self: center;
+    border-radius: 50px;   
+    padding: 10px;
+    padding-left: 15px;
+    padding-right: 15px;
+    transition: ease 300ms;
+}
+
+button:hover {
+    cursor: pointer;
+    background-color: var(--gray-800);
+}
+
+h1 {
+    text-align: center;
 }
 
 p {
+    margin: 0;
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    width: 100vw;
+    max-width: 500px;
+    background-color: var(--gray-300);
+    padding: 20px;
+    border-radius: 10px;
+}
+
+form > * {
     margin: 0;
 }
 
@@ -16,15 +67,6 @@ p {
     gap: 20px;
 }
 
-#event-list > li {
-    padding: 20px;
-    width: 500px;
-    border-radius: 15px;
-    background-color: cadetblue;
-    display: flex;
-    flex-direction: row;
-}
-
 .col {
     display: flex;
     flex-direction: column;
@@ -33,6 +75,7 @@ p {
 .row {
     display: flex;
     flex-direction: row;
+    gap: 20px;
 }
 
 .days-away {
@@ -44,5 +87,12 @@ p {
 }
 
 .event {
-    gap: 20px;
+    padding: 20px;
+    width: 100vw;
+    max-width: 500px;
+    border-radius: 10px;
+    background-color: var(--gray-300);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
 }
