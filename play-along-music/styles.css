@@ -10,14 +10,27 @@ body {
     font-family: Arial, Helvetica, sans-serif;
 }
 
+#note-canvas {
+    width: 100vw;
+    height: 100vh;
+    position: absolute;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: -1;
+}
+
+.sharp {
+    color: black;
+}
+
 .note {
-    animation-name: slide-down;
     animation-duration: 3s;
     animation-timing-function: linear;
     animation-fill-mode: forwards;
     
+    transform: translate(0, -70vh);
     position: absolute;
-    background-color: blue;
     color: white;
     font-size: 50px;
     width: 80px;
@@ -28,11 +41,102 @@ body {
     justify-content: center;
 }
 
-@keyframes slide-down {
+.a {
+    background-color: #FF0000;
+}
+
+.b {
+    background-color: #FF7F00;
+}
+
+.c {
+    background-color: #FFFF00;
+}
+
+.d {
+    background-color: #00FF00;
+}
+
+.e {
+    background-color: #0000FF;
+}
+
+.f {
+    background-color: #4B0082;
+}
+
+.g {
+    background-color: #9400D3;
+}
+
+@keyframes one-left {
     0% {
-        transform: translate(0, -60vh);
+        transform: translate(calc(-5/12 * 100vw), -70vh);
     }
     100% {
-        transform: translate(0, 60vh);
+        transform: translate(calc(-5/12 * 100vw), 70vh);
+    }
+}
+
+@keyframes one-right {
+    0% {
+        transform: translate(calc(-4/12 * 100vw), -70vh);
+    }
+    100% {
+        transform: translate(calc(-4/12 * 100vw), 70vh);
+    }
+}
+
+@keyframes two-left {
+    0% {
+        transform: translate(calc(-2/12 * 100vw), -70vh);
+    }
+    100% {
+        transform: translate(calc(-2/12 * 100vw), 70vh);
+    }
+}
+
+@keyframes two-right {
+    0% {
+        transform: translate(calc(-1/12 * 100vw), -70vh);
+    }
+    100% {
+        transform: translate(calc(-1/12 * 100vw), 70vh);
+    }
+}
+
+@keyframes three-left {
+    0% {
+        transform: translate(calc(1/12 * 100vw), -70vh);
+    }
+    100% {
+        transform: translate(calc(1/12 * 100vw), 70vh);
+    }
+}
+
+@keyframes three-right {
+    0% {
+        transform: translate(calc(2/12 * 100vw), -70vh);
+    }
+    100% {
+        transform: translate(calc(2/12 * 100vw), 70vh);
+    }
+}
+
+@keyframes four-left {
+    0% {
+        transform: translate(calc(4/12 * 100vw), -70vh);
+    }
+    100% {
+        transform: translate(calc(4/12 * 100vw), 70vh);
+    }
+}
+
+@keyframes four-right {
+    0% {
+        transform: translate(calc(5/12 * 100vw), -70vh);
+    }
+    100% {
+        transform: translate(calc(5/12 * 100vw), 70vh);
     }
 }

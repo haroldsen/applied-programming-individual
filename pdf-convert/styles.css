@@ -1,0 +1,21 @@
+
+body {
+    width: 100vw;
+    overflow-x: hidden;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    align-items: center;
+}
+
+#pdf {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.page {
+    height: 90vh;
+    aspect-ratio: 8.5 / 11;
+    border: solid black 2px;
+}

@@ -6,7 +6,8 @@
     <title>Document</title>
 
     <link rel="stylesheet" href="styles.css">
-    <script src="./js/play-along.js" type="module" defer></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
+    <script src="main.js" defer></script>
 
     <!-- og:title | The title of your content. -->
     <meta property="og:title" content="My Catchy Blog Post Title">
@@ -33,7 +34,14 @@
     <meta name="twitter:image" content="https://example.com/image.jpg">
 </head>
 <body>
-    <button id="play-song-button">Play Song</button>
-    <div id="note-canvas"></div>
+    <button id="download-pdf">download</button>
+    <div id="pdf">
+        <div class="page">
+            stuff
+        </div>
+        <div class="page">
+            stuff
+        </div>
+    </div>
 </body>
 </html>
