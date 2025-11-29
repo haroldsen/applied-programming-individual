@@ -5,6 +5,11 @@ console.log(song.title);
 const playSongButton = document.getElementById('play-song-button');
 const noteCanvas = document.getElementById('note-canvas');
 
+function populateSongInfo() {
+    document.getElementById('song-title').innerHTML = song.title;
+    document.getElementById('song-performer').innerHTML = song.from;
+}
+
 function playSong() {
     let notes = song.notes;
     console.log(notes);
@@ -18,4 +23,5 @@ function playSong() {
     }
 }
 
+populateSongInfo();
 playSongButton.addEventListener('click', playSong);

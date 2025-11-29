@@ -1,8 +1,16 @@
 
 @import './library.css';
 
+* {
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+}
+
 body {
     display: flex;
+    flex-direction: column;
+    gap: 20px;
     align-items: center;
     justify-content: center;
     width: 100vw;
@@ -14,6 +22,26 @@ body {
 
 li {
     list-style-type: none;
+}
+
+.standard-button {
+    width: fit-content;
+    padding: 20px;
+    font-size: 20px;
+    border: none;
+    background-color: #444;
+    color: white;
+    border-radius: 100px;
+    padding-top: 12px;
+    padding-bottom: 12px;
+    position: relative;
+    transition: ease 300ms;
+    top: 0px;
+}
+
+.standard-button:hover {
+    top: 3px;
+    cursor: pointer;
 }
 
 #note-canvas {

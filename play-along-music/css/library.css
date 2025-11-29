@@ -6,12 +6,15 @@
 }
 
 .song {
+    width: 150px;
+    height: 150px;
     background-color: #CCC;
     padding: 20px;
     border-radius: 10px;
     position: relative;
     transition: ease 300ms;
     top: 0px;
+    border: none;
 }
 
 .song:hover {
