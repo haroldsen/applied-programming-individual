@@ -1,0 +1,20 @@
+
+#song-library {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 20px;
+}
+
+.song {
+    background-color: #CCC;
+    padding: 20px;
+    border-radius: 10px;
+    position: relative;
+    transition: ease 300ms;
+    top: 0px;
+}
+
+.song:hover {
+    top: 10px;
+    cursor: pointer;
+}
