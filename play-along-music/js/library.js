@@ -1,5 +1,6 @@
 
 import { songs } from './songs.mjs';
+import { setHeaderFooter } from './header-footer.mjs';
 
 const songLibrary = document.getElementById('song-library');
 
@@ -24,5 +25,6 @@ function handleSongSelect(e) {
     }
 }
 
+setHeaderFooter();
 populateSongLibrary();
 songLibrary.addEventListener('click', handleSongSelect);

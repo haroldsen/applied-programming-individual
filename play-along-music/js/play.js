@@ -4,6 +4,7 @@ console.log(song.title);
 
 const playSongButton = document.getElementById('play-song-button');
 const noteCanvas = document.getElementById('note-canvas');
+const songInfo = document.getElementById('song-info');
 
 function populateSongInfo() {
     document.getElementById('song-title').innerHTML = song.title;
@@ -11,6 +12,7 @@ function populateSongInfo() {
 }
 
 function playSong() {
+    songInfo.style.display = 'none';
     let notes = song.notes;
     console.log(notes);
     for (let i = 0; i < notes.length; i ++) {
