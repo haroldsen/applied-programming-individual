@@ -7,7 +7,7 @@
 
     <link rel="stylesheet" href="styles.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/html2pdf.js/0.10.1/html2pdf.bundle.min.js"></script>
-    <script src="main.js" defer></script>
+    <script src="main.js" type="module" defer></script>
 
     <!-- og:title | The title of your content. -->
     <meta property="og:title" content="My Catchy Blog Post Title">
@@ -35,21 +35,15 @@
 </head>
 <body>
     <button id="download-pdf">download</button>
-    <div id="pdf">
-        <div class="page">
-            <table>
-                <thead>
-                    <tr><th>date</th><th>unit</th><th>location</th><th>item</th><th>description</th><th>image</th></tr>
-                </thead>
-                <tbody>
-                    <tr><td>2025.11.25</td><td>101</td><td>Bedroom 1</td><td>Left Bed</td><td>The bed is on fire.</td><td>IMAGE</td></tr>
-                    <tr><td>2025.11.25</td><td>101</td><td>Bedroom 1</td><td>Left Bed</td><td>The bed is on fire.</td><td>IMAGE</td></tr>
-                    <tr><td>2025.11.25</td><td>101</td><td>Bedroom 1</td><td>Left Bed</td><td>The bed is on fire.</td><td>IMAGE</td></tr>
-                    <tr><td>2025.11.25</td><td>101</td><td>Bedroom 1</td><td>Left Bed</td><td>The bed is on fire.</td><td>IMAGE</td></tr>
-                    <tr><td>2025.11.25</td><td>101</td><td>Bedroom 1</td><td>Left Bed</td><td>The bed is on fire.</td><td>IMAGE</td></tr>
-                </tbody>
-            </table>
-        </div>
+    <div id="report">
+        <h1>VILLA REPORT</h1>
+        <table>
+            <thead>
+                <tr><th>date</th><th>unit</th><th>location</th><th>item</th><th>description</th><th>image</th></tr>
+            </thead>
+            <tbody id="report-body">
+            </tbody>
+        </table>
     </div>
 </body>
 </html>
